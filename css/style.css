@@ -1,0 +1,540 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "forma-djr-display", sans-serif;
+    font-style: normal;
+}
+
+/* Header section */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+#logo_black {
+    height: 100px;
+}
+
+#twitter_h {
+    height: 50px;
+}
+
+#linkedin_h {
+    height: 50px;
+}
+
+#github_h {
+    height: 50px;
+}
+
+#logos_h {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header nav a {
+    font-size: 40px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.loaded-header {
+    color: black;
+    height: 150px;
+    transition: height 0.5s ease;
+}
+
+.loaded-header nav a {
+    color: black;
+}
+
+.scroll-header {
+    background-color: black;
+    color: white;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.scroll-header nav a {
+    display: none;
+}
+
+.scroll-header nav #my_logo a {
+    display: block;
+}
+
+.scroll-header #logo_black {
+    height: 50px;
+}
+
+/* General text and lines */
+h1 {
+    font-weight: 900;
+    font-size: 100px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 80px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 80px;
+    margin-top: 35px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 60px;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+h7 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+p {
+    font-size: 24px;
+    font-family: "code-saver", sans-serif;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+/* Text header containers*/
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+/* Welcome section */
+#welcome_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+#home {
+    margin-bottom: 115px;
+}
+
+#floater {
+    margin-top: 360px;
+}
+
+/* About section */
+#about_content {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#my_description {
+    margin-top: 35px;
+    margin-right: 60px;
+    height: auto;
+    grid-column: 1;
+}
+
+#carousel {
+    grid-column: 2;
+    width: 375px;
+    margin-right: 0px;
+    margin-top: -20px;
+    padding-bottom: 20px;
+    transition: opacity 1s ease-in-out;
+}
+
+
+/* Portfolio section */
+
+.grid-container-archive {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.grid-container-archive p {
+    font-size: 18px;
+}
+
+.grid-container-featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-wrap: break-word;
+}
+
+.overlay p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.grid-item:hover .overlay {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer section */
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 50px;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+#page_details {
+    grid-column: 1 / span 2;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#page_details p {
+    padding-right: 50px;
+}
+
+#contact_me {
+    grid-column: 3;
+    padding-right: 50px;
+}
+
+#contact_me p {
+    grid-column: 3;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+footer h5 {
+    margin-left: 50px;
+}
+
+#logos_f {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+#twitter_f {
+    height: 50px;
+}
+
+#linkedin_f {
+    height: 50px;
+}
+
+#github_f {
+    height: 50px;
+}
+
+#email {
+    color: white;
+    text-decoration: none;
+}
+
+#copyright {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1380px) {
+    p {
+        font-size: 20px;
+    }
+
+    .overlay p {
+        font-size: 14px;
+    }
+
+    h7 {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 1180px) {
+    #logo_black {
+        height: 75px;
+    }
+
+    header nav a {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #logo_black {
+        height: 50px;
+    }
+
+    #logos_h {
+        display: none;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    #floater {
+        margin-top: 240px;
+    }
+
+    #about_content {
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    #my_description {
+        grid-row: 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #carousel {
+        grid-row: 2;
+        grid-column: 1;
+        width: 300px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-container-featured {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .grid-container-archive {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .overlay p {
+        font-size: 20px;
+    }
+
+    .grid-container-archive .overlay p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    #floater {
+        margin-top: 120px;
+    }
+
+    .grid-container-archive .overlay p {
+        display: none;
+    }
+
+    .overlay p {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    footer {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    footer h5 {
+        align-self: end;
+    }
+
+    #contact_me {
+        grid-column: 1;
+    }
+
+    #contact_me p {
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header nav a {
+        font-size: 18px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .loaded-header {
+        height: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #logo_black {
+        height: 30px;
+    }
+
+    .scroll-header {
+        height: 40px;
+    }
+
+    .scroll-header #logo_black {
+        height: 30px;
+    }
+
+    .container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #home {
+        margin-bottom: 75px;
+    }
+
+    #floater {
+        margin-top: 75px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #about {
+        margin-top: 25px;
+        margin-bottom: 55px;
+    }
+
+    footer {
+        display: inline;
+    }
+
+    footer h5 {
+        margin-left: 25px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    #copyright {
+        font-size: 12px;
+    }
+
+    #page_details {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #contact_me p {
+        padding-left: 25px;
+        margin-top: 20px;
+    }
+
+    #logos_f {
+        margin-bottom: 30px;
+    }
+
+}

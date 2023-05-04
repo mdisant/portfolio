@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="images/logos/shortcut.png">
+
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nam3gnp.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nam3gnp.css">
+
+
+    <title>Michael DiSanto | Portfolio</title>
+</head>
+
+<body>
+    <header class="loaded-header">
+        <nav id="my_nav">
+            <div id="my_logo" href="#home">
+                <a href="">
+                    <img src="images/logos/logo_black.png" alt="Michael DiSanto" id="logo_black">
+                </a>
+            </div>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="DiSanto_Michael_Resume.pdf" target="_blank">Resume</a>
+            <div id="logos_h">
+                <a href="https://mobile.twitter.com/TheMikeDiSanto" target=”_blank”>
+                    <img src="images/logos/twitter_black.png" alt="Twitter Page" id="twitter_h">
+                </a>
+                <a href="https://www.linkedin.com/in/mpdisanto/" target=”_blank”>
+                    <img src="images/logos/linkedin_black.png" alt="LinkedIn Page" id="linkedin_h">
+                </a>
+                <a href="https://github.com/mdisant" target=”_blank”>
+                    <img src="images/logos/github_black.png" alt="Github Page" id="github_h">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <img src="images/background.png" alt="welcome" id="welcome_img">
+        <section id="home" class="container">
+            <div class="content" id="floater">
+                <h1>Michael DiSanto</h1>
+                <h3>Data Science and Modeling.</h3>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>&ltAbout me></h2>
+            <h4>Hello world...</h4>
+
+            <div id="about_content">
+                <p id="my_description"></p>
+                <img src="images/carousel/grad_photo.jpg" alt="Carousel Image" id="carousel">
+            </div>
+
+
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2>&ltPortfolio></h2>
+            <h4>My latest work...</h4>
+
+            <div class="grid-container-featured">
+                <div class="grid-item">
+                    <a href="https://medium.com/@lina.i.drechsler/what-if-wordle-were-6-letters-instead-of-5-c376fbe7953b"
+                        target="_blank">
+                        <img src="images/projects/wordle.png" alt="Wordle Project" id="feat_im_1">
+                        <div class="overlay">
+                            <h6>
+                                Wordle Prediction
+                            </h6>
+                            <p>
+                                This project analyzed the popular online word-guessing game WORDLE using big data. This
+                                was my final project for the Computational Analysis of Big Data course at DIS
+                                Copenhagen. My team utilized a dataset of the most common 1/3 million words in the
+                                English language and created a solving algorithm using entropy calcuations.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="https://medium.com/@lina.i.drechsler/can-life-imitate-art-417f03f07f51" target="_blank">
+                        <img src="images/projects/Style_Transfer.png" alt="MSCI NLP" id="feat_im_2">
+                        <div class="overlay">
+                            <h6>
+                                TensorFlow Image Style Transfer
+                            </h6>
+                            <p>
+                                For my final project in the Artificial Neural Networks and Deep Learning course at DIS
+                                Copenhagen, my team explored the use of convolutional neural networks (CNNs) for style
+                                transfer in digital images. We implemented TensorFlow's pre-trained model, VGG19, to
+                                transform photos into art pieces of any style. We found that matching up photos with art
+                                that has similar shapes and patterns is critical for this style transfer model to be
+                                successful.
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="grid-container-archive">
+                <div class="grid-item">
+                    <img src="images/projects/msci.png" alt="Image Style Transfer" id="proj_im_1">
+                    <div class="overlay">
+                        <h7>
+                            MSCI Natural Language Processing
+                        </h7>
+                        <p>
+                            The University of Stellenbosch and Center for Conflict and Collaboration are using NLP to
+                            detect socio-political risks and prevent conflicts in South Africa. My team in the
+                            Information Analysis Capstone course at the Unviersity of Michigan School of Information
+                            (UMSI)
+                            developed a more accurate model by identifying feature importance and
+                            standardized values for word collocation across Morgan Stanley Capital International (MSCI)
+                            All-World Index annual reports.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/projects/horse_racing.png" alt="Horse Racing Machine Learning" id="proj_im_3">
+                    <div class="overlay">
+                        <h7>
+                            Horse Racing Machine Learning
+                        </h7>
+                        <p>
+                            This final project from the Data Exploration course at UMSI attempted to predict the finish
+                            time of horses in Hong Kong horse
+                            racing using a combination of race and horse attributes, as well as trainer and jockey
+                            quality. We merged datasets from Kaggle, conducted exploratory data analysis, cleaned the
+                            data, and engineered new features before using linear and random forest regression models to
+                            make predictions.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/projects/massdep.png" alt="MDEP Analysis" id="proj_im_4">
+                    <div class="overlay">
+                        <h7>
+                            Massachusetts Department of Environmental Protection Analysis
+                        </h7>
+                        <p>
+                            My project team for Reach Consulting Group at UMSI consulted for the Massachusetts
+                            Department of Environmental Protection to analyze the relationship between environmental
+                            justice communities and vehicle inspection failure rates. Ultimately, we created an ArcGIS
+                            map overlaying
+                            inspection failures on environmental justice communities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h5>Page Details</h5>
+        <div id="page_details">
+            <p>
+                This website was created as a showcase for my data science project portfolio, where
+                I share some of my recent work and accomplishments. Additionally, I
+                wanted to challenge myself by building this page using HTML, CSS, and
+                JavaScript, and learn more about web development in the process. Thank
+                you for visiting, and I hope you enjoyed exploring my page! <br><br> Special thanks to Ben Millen for
+                consulting me on the webpage design.
+            </p>
+            <p id="copyright">&copy; 2023 Michael Pierce DiSanto. All rights reserved.</p>
+        </div>
+
+        <div id="contact_me">
+            <p>
+                <a href="mailto:mikepdi@yahoo.com" target="_blank" id="email">mikepdi@yahoo.com</a>
+                <br>
+                <br>
+                (914) 403-1696
+            </p>
+
+            <div id="logos_f">
+                <a href="https://mobile.twitter.com/TheMikeDiSanto" target=”_blank”>
+                    <img src="images/logos/twitter_white.png" alt="Twitter Page" id="twitter_f">
+                </a>
+                <a href="https://www.linkedin.com/in/mpdisanto/" target=”_blank”>
+                    <img src="images/logos/linkedin_white.png" alt="LinkedIn Page" id="linkedin_f">
+                </a>
+                <a href="https://github.com/mdisant" target=”_blank”>
+                    <img src="images/logos/github_white.png" alt="Github Page" id="github_f">
+                </a>
+            </div>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
