@@ -60,9 +60,8 @@ const observer = new IntersectionObserver((entries, observer) => {
             // Start the typewriter effect
             typewriter("Welcome to my website! My name is Michael DiSanto, and I am a recent \
             graduate of the University of Michigan School of Information. I earned a \
-            degree in Information Analysis with a minor in Business. This winter, I will be joining \
-            KPMG Advisory as a Data Scientist and Modeler in the Data, Analytics, and AI service line. I \
-            look forward to applying my data science skills to practical situations as I begin my career.\
+            degree in Information Analysis with a minor in Business. I look forward to \
+            applying my data science skills to practical situations as I begin my career.\
             <br><br>\
             Through this website, I hope to connect with like-minded individuals and contribute to a \
             community of data scientists. Here, you will find a selection of my personal and class projects. \
